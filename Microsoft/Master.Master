@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Microsoft.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Microsoft</title>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+    <link href="~/Styles/Stylesheet.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="~/Styles/fonts.css" rel="stylesheet" type="text/css" media="all" />
+    
+    <style type="text/css">
+        .auto-style1 {
+            margin: 0px auto;
+            width: 943px;
+            height: 182px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+      <div id="header-wrapper">
+	<div id="header" class="auto-style1">
+		<div id="logo">
+			<h1><a href="#">Microsoft</a></h1>
+			<div id="menu">
+				<ul>
+					<li class="current_page_item"><a href="Home.aspx" accesskey="1" title="">Homepage</a></li>
+					<li><a href="Login.aspx" accesskey="2" title="">Login</a></li>
+					<li><a href="Email.aspx" accesskey="3" title="">About Us</a></li>
+					<li><a href="Registration.aspx" accesskey="4" title="">Registration</a></li>
+					<li><a href="ContactUs.aspx" accesskey="5" title="">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+          <div id="status">
+              <asp:Label ID="logstatus" runat="server" Text=""  ForeColor="White"></asp:Label> &nbsp; &nbsp;<asp:Button ID="log" runat="server" Text="Button" CssClass="button-small" OnClick="log_Click" /> &nbsp; &nbsp;
+          </div>
+</div>
+<div id="page-wrapper">
+	<div id="page" class="container">
+	 	<div id="content-area">
+                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+	</div>
+   </div>	
+</div>
+<div id="copyright" class="container">
+	<p>&copy; All rights reserved.</p>
+</div>
+    </form>
+</body>
+</html>
