@@ -77,8 +77,8 @@
     <Content Include="Pages\Login.aspx" />
     <Content Include="Pages\PostLogin.aspx" />
     <Content Include="Pages\Registration.aspx" />
-    <Content Include="Styles\fonts.css" />
-    <Content Include="Styles\Stylesheet.css" />
+    <Content Include="App_Themes\Theme1\fonts.css" />
+    <Content Include="App_Themes\Theme1\Stylesheet.css" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

@@ -6,8 +6,7 @@
 <head runat="server">
     <title>Microsoft</title>
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
-    <link href="~/Styles/Stylesheet.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="~/Styles/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
     
     <style type="text/css">
         .auto-style1 {
@@ -28,7 +27,7 @@
 				<ul>
 					<li class="current_page_item"><a href="Home.aspx" accesskey="1" title="">Homepage</a></li>
 					<li><a href="Login.aspx" accesskey="2" title="">Login</a></li>
-					<li><a href="Email.aspx" accesskey="3" title="">About Us</a></li>
+					<li><a href="Email.aspx" accesskey="3" title="">Email Us</a></li>
 					<li><a href="Registration.aspx" accesskey="4" title="">Registration</a></li>
 					<li><a href="ContactUs.aspx" accesskey="5" title="">Contact Us</a></li>
 				</ul>

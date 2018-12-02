@@ -13,5 +13,10 @@ namespace Microsoft.Pages
         {
 
         }
+
+        protected void Append_Click(object sender, EventArgs e)
+        {
+            Result.Text = string1.Text + string2.Text;
+        }
     }
 }
