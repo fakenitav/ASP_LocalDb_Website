@@ -32,18 +32,7 @@
              </td>
           
         </tr>
-         <tr>
-             <td style="width: 199px">
-
-                 <asp:Button ID="registerbtn" runat="server" Text="Register" OnClick="btnRegister_Click" style="margin-bottom: 0px" />
-
-             </td>
-         </tr>
-         <tr>
-             <td style="width: 199px">
-
-                 &nbsp;</td>
-         </tr>
+        
          <tr>
              <td style="width: 199px">
 
@@ -51,9 +40,9 @@
 
              </td>
          </tr>
-         <tr>
-             <td style="width: 199px">&nbsp;</td>
-         </tr>
+      
     </table>
+
+    <asp:Button ID="registerbtn" runat="server" Text="Register" OnClick="btnRegister_Click" style="margin-bottom: 0px" CausesValidation="False"/>
 
 </asp:Content>

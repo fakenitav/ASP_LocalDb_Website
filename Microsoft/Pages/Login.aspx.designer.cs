@@ -58,15 +58,6 @@ namespace Microsoft.Pages {
         protected global::System.Web.UI.WebControls.Button btnLogin;
         
         /// <summary>
-        /// registerbtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button registerbtn;
-        
-        /// <summary>
         /// lblError control.
         /// </summary>
         /// <remarks>
@@ -74,5 +65,14 @@ namespace Microsoft.Pages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblError;
+        
+        /// <summary>
+        /// registerbtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button registerbtn;
     }
 }

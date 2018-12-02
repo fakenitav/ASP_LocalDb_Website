@@ -29,7 +29,7 @@
 					<li><a href="Login.aspx" accesskey="2" title="">Login</a></li>
 					<li><a href="Email.aspx" accesskey="3" title="">Email Us</a></li>
 					<li><a href="Registration.aspx" accesskey="4" title="">Registration</a></li>
-					<li><a href="ContactUs.aspx" accesskey="5" title="">Contact Us</a></li>
+					<li><a href="Ajax.aspx" accesskey="5" title="">Ajax</a></li>
 				</ul>
 			</div>
 		</div>
