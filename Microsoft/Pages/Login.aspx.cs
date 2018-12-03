@@ -14,10 +14,9 @@ namespace Microsoft.Pages
         {
 
         }
-
-        protected void btnLogin_Click(object sender, EventArgs e)
+        protected void Login1_Authenticate(object sender, AuthenticateEventArgs e)
         {
-            Users user = ConnectionClass.LoginUser(txtLogin.Text, txtPassword.Text);
+            Users user = ConnectionClass.LoginUser(Login1.UserName, Login1.Password);
             if (user != null)
             {
                 //Store login variable in session
@@ -27,13 +26,9 @@ namespace Microsoft.Pages
                 Session["password"] = user.password;
                 Response.Redirect("~/Pages/PostLogin.aspx");
             }
-            else
-            {
-                lblError.Text = "Login Failed";
-            }
         }
 
-        protected void btnRegister_Click(object sender, EventArgs e)
+        protected void Register_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Pages/Registration.aspx");
         }

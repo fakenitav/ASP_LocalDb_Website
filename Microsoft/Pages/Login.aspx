@@ -1,48 +1,13 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Master.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Microsoft.Pages.WebForm1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-     <table style="width: 435px; height: 206px">
-        <tr>
-             <td style="width: 199px">
-
-                 Login</td>
-            <td>
-
-                <asp:TextBox ID="txtLogin" runat="server" ></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtLogin" ErrorMessage="*"></asp:RequiredFieldValidator>
-                
-             </td>
-        </tr>
-          <tr>
-             <td style="width: 199px; height: 57px;">
-
-                 Password</td>
-            <td style="height: 57px">
-
-                <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPassword" ErrorMessage="*"></asp:RequiredFieldValidator>
-
-             </td>
-        </tr>
-          <tr>
-             <td style="width: 199px">
-
-                 <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
-
-             </td>
-          
-        </tr>
-        
-         <tr>
-             <td style="width: 199px">
-
-                 <asp:Label ID="lblError" runat="server"></asp:Label>
-
-             </td>
-         </tr>
-      
-    </table>
-
-    <asp:Button ID="registerbtn" runat="server" Text="Register" OnClick="btnRegister_Click" style="margin-bottom: 0px" CausesValidation="False"/>
+   
+    <asp:Login ID="Login1" runat="server" BackColor="#EFF3FB" BorderColor="#B5C7DE" BorderPadding="4" BorderStyle="Solid" BorderWidth="1px" DisplayRememberMe="False" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#333333" Height="224px" OnAuthenticate="Login1_Authenticate" Width="380px">
+        <InstructionTextStyle Font-Italic="True" ForeColor="Black" />
+        <LoginButtonStyle BackColor="White" BorderColor="#507CD1" BorderStyle="Solid" BorderWidth="1px" Font-Names="Verdana" Font-Size="0.8em" ForeColor="#284E98" />
+        <TextBoxStyle Font-Size="0.8em" />
+        <TitleTextStyle BackColor="#507CD1" Font-Bold="True" Font-Size="0.9em" ForeColor="White" />
+    </asp:Login>
+    <br><br>
+     <asp:Button ID="Register" runat="server" Text="Register" OnClick="Register_Click" />
 
 </asp:Content>
