@@ -14,7 +14,7 @@ namespace Microsoft.Pages
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            sentmail.Visible = false;
         }
 
         protected void SendEmail(object sender, EventArgs e)
@@ -38,7 +38,8 @@ namespace Microsoft.Pages
             smtp.Credentials = NetworkCred;
             smtp.Port = 587;
             smtp.Send(mail);
-            Response.Write("Send mail");
+            sentmail.Text = "Mail Sent Successfully";
+            sentmail.Visible = true;
         }
     }
 }

@@ -77,10 +77,11 @@
     <tr>
         <td>
             &nbsp;
-        </td>
+            </td>
     </tr>
     <tr>
         <td>
+            <asp:Label ID="sentmail" runat="server" Text="Label" ForeColor="#66FF33"></asp:Label>
         </td>
         <td>
             <asp:Button ID="sendMail" Text="Send" OnClick="SendEmail" runat="server" />
